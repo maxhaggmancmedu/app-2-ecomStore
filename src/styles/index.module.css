@@ -1,0 +1,16 @@
+.pageContainer {
+    position: relative;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 96px;
+}
+
+.productSection {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
