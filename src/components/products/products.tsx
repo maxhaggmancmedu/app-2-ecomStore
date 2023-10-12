@@ -1,7 +1,7 @@
 import React from 'react'
 import { ProductsProps } from '@/types/productsProps'
 import Image from 'next/image'
-import styles from '@/components/products/products.module.css'
+import styles from '@/components/products/products.module.scss'
 import Link from 'next/link'
 
 export default function Products({ products }: ProductsProps): React.JSX.Element {
@@ -11,7 +11,7 @@ export default function Products({ products }: ProductsProps): React.JSX.Element
             return (
                 <Link className={styles.product} href={`/product/${product.id}`} key={product.id}>
                     <div className={styles.imgContainer}>
-                        <Image className={styles.img} alt={product.title} src={product.image} width={300} height={300} />
+                        <Image priority={true} className={styles.img} alt={product.title} src={product.image} width={300} height={300} />
                     </div>
                     <div className={styles.titleAndPrice}>
                         <h3>{product.title}</h3>

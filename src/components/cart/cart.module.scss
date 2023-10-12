@@ -1,3 +1,5 @@
+@import '../../styles/_mixins';
+
 .cartComponent {
     align-items: center;
     background-color: #fff;
@@ -10,6 +12,10 @@
     right: 60px;
     top: 73px;
     width: 300px;
+    @include responsive-tablet {
+        right: 48px;
+        top: 61px;
+    }
 }
 
 .productInfo {
@@ -45,11 +51,4 @@
     text-align: center;
     text-decoration: none;
     width: 80%;
-}
-
-@media screen and (max-width: 769px) {
-    .cartComponent {
-        right: 48px;
-        top: 61px;
-    }
 }

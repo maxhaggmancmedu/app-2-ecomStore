@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '@/components/header/header.module.css'
+import styles from '@/components/header/header.module.scss'
 import Link from 'next/link'
 import { useState, useContext } from 'react'
 import { CartContext } from '@/context/CartContext'

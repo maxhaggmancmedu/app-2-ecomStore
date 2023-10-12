@@ -1,3 +1,5 @@
+@import '../../styles/_mixins';
+
 .container {
     align-items: center;
     display: flex;
@@ -15,10 +17,7 @@
     font-size: 36px;
     font-weight: bold;
     text-align: center;
-}
-
-@media screen and (max-width: 769px) { 
-    .h3 {
+    @include responsive-tablet {
         font-size: 20px;
         margin: 0 24px;
     }

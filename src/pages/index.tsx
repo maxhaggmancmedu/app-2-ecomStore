@@ -1,10 +1,11 @@
+import React from 'react';
 import Head from 'next/head'
 import { getProducts } from '@/api-routes/getProducts'
 import Products from '@/components/products/products'
 import { useEffect, useState } from 'react'
 import { Product } from '@/types/products'
 import Button from '@/components/button/Button'
-import styles from '@/styles/index.module.css'
+import styles from './index.module.scss'
 
 export default function Home() {
   const [products, setProducts] = useState<Array<Product> | undefined>(undefined)

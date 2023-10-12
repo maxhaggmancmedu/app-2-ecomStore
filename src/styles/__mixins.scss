@@ -1,0 +1,14 @@
+@import '../styles/_variables';
+
+@mixin responsive-tablet {
+    @media screen and (max-width: $screen-tablet) {
+        @content
+    }
+}
+
+@mixin responsive-laptop {
+    @media screen and (max-width: $screen-laptop) {
+        @content
+    }
+}
+

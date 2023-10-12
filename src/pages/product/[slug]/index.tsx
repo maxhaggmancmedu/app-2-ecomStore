@@ -1,9 +1,10 @@
+import React from 'react';
 import { useRouter } from "next/router";
 import { Product, ProductInCart } from "@/types/products";
 import { getProduct } from "@/api-routes/getProducts";
 import { useEffect, useState, useContext } from "react";
 import Image from "next/image";
-import styles from '@/pages/product/[slug]/index.module.css'
+import styles from '@/pages/product/[slug]/index.module.scss'
 import { CartContext } from "@/context/CartContext";
 import { truncate } from "@/utils/truncate";
 let cartId = 0;

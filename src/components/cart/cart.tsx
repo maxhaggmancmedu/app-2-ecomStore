@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import styles from '@/components/cart/cart.module.css'
+import styles from '@/components/cart/cart.module.scss'
 import deleteIcon from '@/images/deleteIcon.png'
 import Link from 'next/link'
 import { CartProps } from '@/types/cartProps'

@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '@/pages/checkout/index.module.css'
+import styles from '@/pages/checkout/index.module.scss'
 import { useRouter } from 'next/router'
 import Button from '@/components/button/Button'
 
